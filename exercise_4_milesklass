@@ -30,6 +30,7 @@
                   width: 960px; /*TO DO: Reduce this see what happens*/
                   font-family: Arial, Verdana, sans-serif;
                   color: #Black;
+                  border: 1px solid black;
                   
                   
                   
@@ -43,6 +44,7 @@
                   background-color: #EEE;
                   margin: 6px;
                   padding: 5px;
+                  height: 500px;
                  }
 
                 #rightRail {
@@ -50,7 +52,7 @@
                   float: left; /*This is key*/
                   width: 315px; /*This is key*/
                   border: 1px solid black; 
-                   
+                   height: 500px;
                   margin: 6px;
                   padding: 5px;                      
                  
@@ -84,22 +86,49 @@
   align-items: center;
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: bold;
+  /*
   display: none;
+  */
 }
 
 .coming-soon-box h2 {
   margin: 6px;
   padding: 5px;
-
 }
 
+
+      #imagebox{
+      float: left;
+                  width: 930px;
+                  border: 1px solid black;
+                  background-color: #EEE;
+                  margin: 6px;
+                  padding: 5px;
+
+
+
+
+}
 
 footer {
    margin: 6px;
     padding: 5px;
+      border: 1px solid black ;
+  height: 200px;
+  width: 930px;
+  background-color: #EEE;
+  overflow: auto; /* Enable scrolling */
 }
+
+td.description {
+  min-width: 450px;
+  max-width: 650px;
+  text-align: left;
+  padding: 5px;
+  margin: 6px;}
+
 
           </style>
 
@@ -117,7 +146,7 @@ footer {
 </ul>
     </h1>
 
-<div id="main">
+<div>
 
       <div id="mainContent">
 
@@ -147,6 +176,26 @@ footer {
           </div>
 
       </div>
+
+
+ <div id="imagebox">
+  <table>
+  
+ <tr>
+  <td> <img src="images/rhodes.jpg" width="200" height="200" alt="Fender Rhodes" title="This is a nice picture of a piano." /> </td>
+
+    <td class="description"> The Rhodes piano is an  electro-mechanical piano, invented by Harold Rhodes during the fifties and later manufactured in a number of models ...</td> 
+</tr> 
+
+</tr>
+</table>
+ </div>
+
+
+      <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </footer>
+
 
   </body>
 
