@@ -8,10 +8,11 @@
   <title>Assignment 4</title>
 </head>
 
-  <body>
+   <body>
  <style type="text/css">
                   ol {
                   list-style-type: square;
+
                         }
                 ul{
                 
@@ -61,15 +62,43 @@
             padding: 5px;
             background-color: transparent;
             border: 1px solid #000;
-            color: #000;
+            color: Blue;
             float: right;
   
 }
 
 .button:hover {
-  color: Blue;
+  color: Black;
   background-color: White;
   border: 1px solid white;
+}
+
+          .coming-soon-box {
+  width: 300px;
+  height: 200px;
+  background-color: #EEE;
+  border: 1px solid black ;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  display: none;
+}
+
+.coming-soon-box h2 {
+  margin: 6px;
+  padding: 5px;
+
+}
+
+
+footer {
+   margin: 6px;
+    padding: 5px;
 }
 
           </style>
@@ -113,8 +142,11 @@
 
         </ol>
 
-      </div>
+        <div class="coming-soon-box">
+        <h2>Coming Soon</h2>
+          </div>
 
+      </div>
 
   </body>
 
