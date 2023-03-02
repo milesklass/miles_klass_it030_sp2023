@@ -1,15 +1,14 @@
-<body>
 <style type="text/css">
 
 ol {
-      list-style-type: square; /*Shows the list as sqaures instead of numbers*/
-  }
+  list-style-type: square; /*Shows the list as sqaures instead of numbers*/
+}
   
 ul{           
   font-family: Arial, Verdana, sans-serif;
   font-size: 12px;
   color: black;
-  border: 1px solid darkgrey;
+  border: 1px solid black;
   padding: 5px;
   margin: 6px;
   height: 100px;
@@ -20,12 +19,13 @@ ul{
 body {
   width: 960px; /*This is the font for all the text in the body*/
   font-family: Arial, Verdana, sans-serif;
+  font-size: 12px;
   color: Black;
   border: 1px solid black;
   font-size: 12px;
 }
                 
-#mainContent{ /* Set float, width, border, background color, margin, padding, and height for the main content */
+#leftBox{ /* Set float, width, border, background color, margin, padding, and height for the left box */
   float: left;
   width: 590px;
   border: 1px solid black;
@@ -37,7 +37,7 @@ body {
 
 #rightBox { /* Set float, width, border, margin, padding, and height for the right box */
   float: left; /*This is key*/
-  width: 315px; /*This is key*/
+  width: 322px; /*This is key*/
   border: 1px solid black; 
   height: 450px;
   margin: 6px;
@@ -70,14 +70,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Verdana, sans-serif;
   font-size: 12px;
   font-weight: bold;
   display: none;/* - this is to get rid of the 'coming soon' so it does not show on the website */
 }
 
 
-#image{
+#image{ /* this is the features for the image on the page*/
   float: left;
   width: 930px;
   border: 1px solid black;
