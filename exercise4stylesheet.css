@@ -37,7 +37,7 @@ body {
 
 #rightBox { /* Set float, width, border, margin, padding, and height for the right box */
   float: left; /*This is key*/
-  width: 322px; /*This is key*/
+  width: 315px; /*This is key*/
   border: 1px solid black; 
   height: 450px;
   margin: 6px;
