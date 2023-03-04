@@ -63,8 +63,8 @@ body {
 }
 
 .button:hover { /* color of the button after hovering over it*/
-  color: Black;
-  background-color: White;
+  color: black;
+  background-color: white;
 }
 
 .comingSoonBox {
