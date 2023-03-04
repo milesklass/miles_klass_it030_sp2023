@@ -7,7 +7,7 @@
   }
 
 ol {
-  list-style-type: square; /*Shows the list as sqaures instead of numbers*/
+  list-style-type: square;/*Shows the list as sqaures instead of numbers*/
 }
 
 ul{           
@@ -19,9 +19,8 @@ ul{
   margin: 6px;
   height: 100px;
   background-color: #EEE;
-
-
 }
+
 
 body {
   width: 960px; /*This is the font for all the text in the body*/
@@ -29,7 +28,6 @@ body {
   font-size: 12px;
   color: black;
   border: 1px solid black;
-
 }
                 
 #leftBox{ /* Set float, width, border, background color, margin, padding, and height for the left box */
@@ -40,6 +38,7 @@ body {
   margin: 6px;
   padding: 5px;
   height: 450px;
+
 }
 
 #rightBox { /* Set float, width, border, margin, padding, and height for the right box */
@@ -48,7 +47,7 @@ body {
   border: 1px solid black; 
   height: 450px;
   margin: 6px;
-  padding: 5px;                      
+  padding: 5px;             
 }
                 
 .button { /* Set display, margin, padding, background color, border, and color for the button */
