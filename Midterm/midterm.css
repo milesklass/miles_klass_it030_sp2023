@@ -7,17 +7,14 @@ body {
 h1 {
   color: black;
 }
-header{
-  border: 1px solid black;
-  padding: 20px;
-  margin: 15px;
-}
-nav, article, footer, #imageBox {
+
+nav, article, footer, header, #imageBox {
   border: 1px solid black;
   padding: 15px;
+  background: #eee;
 }
 
-nav, article, footer, #imageBox {
+nav, article, footer, header, #imageBox {
   background: #eee;
 }
 
@@ -29,9 +26,10 @@ nav, article, footer, #imageBox {
   grid-template-areas:
     "nav"
     "article"
-    "sidebar"
+    "sidebarTwo"
     "imageBox"
-    "footer";
+    "sidebar"
+    "footer"
 }
 
 nav li {
@@ -81,10 +79,11 @@ nav ul {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
       "nav nav"
-      "article sidebar"
+      "article article"
       "imageBox sidebar"
       "footer footer";
   }
+
 }
 
 /* CSS kicks in when the device width is 768px and above */
@@ -93,22 +92,24 @@ nav ul {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
       "nav nav"
-      "article sidebar"
-      "imageBox sidebar"
+      "sidebar article"
+      "sidebar article"
       "footer footer";
   }
+
 }
 
 /* CSS kicks in when the device width is 1024px and above */
 @media screen and (min-width: 1024px) {
   .grid {
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 2fr;
     grid-template-areas:
       "nav nav nav"
-      "article sidebar sidebar"
-      "imageBox sidebar sidebar"
+      "imageBox imageBox sidebar"
+      "article article sidebar"
       "footer footer footer";
   }
+
 }
 
 #imageBox {
@@ -122,9 +123,21 @@ article {
   padding: 10px;
 }
 
+header{
+  grid-area: header;
+  border: 1px solid black;
+  padding: 10px;
+}
 
 #sidebar {
   grid-area: sidebar;
+  border: 1px solid black;
+  padding: 5px;
+  background: #eee;
+}
+
+#sidebarTwo {
+  grid-area: sidebarTwo;
   border: 1px solid black;
   padding: 5px;
 }
@@ -149,4 +162,8 @@ article {
 
 #imageBoxContent {
   float:
+}
+
+footer{
+  overflow: scroll;
 }
