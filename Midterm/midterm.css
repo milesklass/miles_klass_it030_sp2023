@@ -8,13 +8,13 @@ h1 {
   color: black;
 }
 
-nav, article, footer, header, #imageBox {
+nav, article, footer, header, #sidebarTwo, #imageBox {
   border: 1px solid black;
   padding: 15px;
   background: #eee;
 }
 
-nav, article, footer, header, #imageBox {
+nav, article, footer, header, #sidebarTwo, #imageBox {
   background: #eee;
 }
 
@@ -93,7 +93,7 @@ nav ul {
     grid-template-areas:
       "nav nav"
       "sidebar article"
-      "sidebar article"
+      "sidebar imageBox"
       "footer footer";
   }
 
