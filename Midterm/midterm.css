@@ -95,6 +95,7 @@ nav ul {
       "sidebar article"
       "sidebar imageBox"
       "footer footer";
+
   }
 
 }
@@ -157,7 +158,6 @@ header{
 
 #imageBox figure {
   float: left;
-  margin: 0 10px 0 0;
 }
 
 #imageBoxContent {
@@ -167,3 +167,44 @@ header{
 footer{
   overflow: scroll;
 }
+
+
+@media screen and (min-width: 1px) and (max-width: 567px) {
+  footer::after{
+    font-size: 32px;
+    content: 'Viewing Mode: Mobile';
+    display: block;
+    text-align: center;
+    background-color: lightgrey;
+    color: blue;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  footer::after{
+    font-size: 32px;
+    content: 'Viewing Mode: Tablet';
+    display: block;
+    text-align: center;
+    background-color: lightgrey;
+    color: blue;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1646px) {
+  footer::after{
+    font-size: 32px;
+    content: 'Viewing Mode: Desktop';  
+    display: block;
+    text-align: center;
+    background-color: lightgrey;
+    color: blue;
+    padding: 10px;
+  }
+}
+
+
+

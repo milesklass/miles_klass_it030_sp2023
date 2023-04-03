@@ -5,14 +5,17 @@
   <meta name="description" content="This is midterm for the IT030 course we are doing">
   <meta name="keywords" content="HTML, CSS">
   <meta name="student" content="Miles Klass">
-<title>Assignment 4</title>
+<title>Midterm</title>
 </head>
 <link rel="stylesheet" type="text/css" href="midterm.css"> <!--external sheet-->
+
 </head>
 <body>
   
 <div id="header">
     <h1>Miles Alexander Klass</h1>
+    <p>Hi there, <span id="greeting"></span>!</p>
+
 </div>
 
 <div class="grid">
@@ -32,7 +35,6 @@
     
 </article>
 
-
 <div id="sidebar">
   <h1>Location</h1>
   <p>225 East 78st <div>New York, NY 10028</div></p>
@@ -41,7 +43,7 @@
 <div class="container">
   <div>
     <figure>
-      <img src="Portrait.JPG"width="250" height="300" alt="mklass" title="This is a nice picture of Miles Klass."/>
+      <img src="/Users/milesklass/Desktop/miles_klass_it030_sp2023/Midterm/Portrait.JPG"width="250" height="300" alt="mklass" title="This is a nice picture of Miles Klass."/>
     <figcaption>
       Photo of Miles Klass from LinkedIn profile
     </figcaption>
@@ -52,11 +54,60 @@
 </div>
    <footer>
         <p>I am a well-organized, highly motivated individual who enjoys the challenges of working in a fast-paced office environment. Having completed work experience at Elevate Dynamics and Adventure Media Group, I have strong marketing skills, including working knowledge of Zendesk CRM, Google Analytics, and project management software, as well as email marketing software like MailChimp and Stripo. I have also learned how to interact with customers and clients through a customer support application called Podium.</p>
-
-        <p>To strengthen my abilities in marketing, I enrolled in a digital marketing course at Hofstra, where I learned to create landing pages for specific products and ways to improve ads through simulated Google Analytics program. During this class, my creative and analytical skills were called upon to be successful. My interests and dedication would make me a valuable candidate for this job.</p>
    </footer>
 
 </div>
 
    </body>
 </html>
+
+<script>
+// Get current hour
+const currentHour = new Date().getHours();
+
+// Greet the user based on the time of the day
+let greeting;
+if (currentHour < 12) {r
+  greeting = 'Good morning';
+} else if (currentHour < 16) {
+  greeting = 'Good afternoon';
+} else if (currentHour < 20) {
+  greeting = 'Good evening';
+} else {
+  greeting = 'Good night';
+}
+
+// Display the greeting message
+const greetingElement = document.getElementById('greeting');
+greetingElement.innerText = greeting;
+</script>
+
+
+
+<script>
+  // Define breakpoints for mobile, tablet, and desktop devices
+const MOBILE_BREAKPOINT = 567;
+const TABLET_BREAKPOINT = 768;
+const DESKTOP_BREAKPOINT = 1024;
+
+// Get the width of the window
+const windowWidth = window.innerWidth;
+
+// Define message based on screen size
+let message;
+if (windowWidth < MOBILE_BREAKPOINT) {
+  message = "You are currently on a mobile device";
+} else if (windowWidth < TABLET_BREAKPOINT) {
+  message = "You are on a tablet device";
+} else if (windowWidth < DESKTOP_BREAKPOINT) {
+  message = "You are on a desktop device";
+} else {
+  message = "You are on a desktop device";
+}
+
+// Display message in the footer of the page
+const footer = document.querySelector("footer");
+const messageElement = document.createElement("b");
+messageElement.textContent = message;
+footer.appendChild(messageElement);
+</script>
